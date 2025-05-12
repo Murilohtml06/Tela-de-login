@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <main>
+        <section>
+            <div id="imagem">
+
+            </div>
+
+            <div id="formulario">
+                <h1>Login</h1>
+                <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+
+                <form action="" method="post">
+                    <div class="campo" id="campo-email">
+                        <label for="email"><i class="bi bi-person-fill"></i></label>
+                        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                    </div>
+
+                    <div class="campo" id="campo-senha">
+                        <label for="senha"><i class="bi bi-lock-fill"></i></label>
+                        <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required
+                            minlength="8">
+                    </div>
+
+                    <div class="campo">
+                        <input type="submit" value="Entrar" id="entrar">
+                    </div>
+
+                        <a href="#" id="btn">Esqueci a senha <i class="bi bi-envelope-fill"></i>
+                        </a>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    position: relative;
+    background-color: #5f2c82;
+    height: 100vh;
+    width: 100vw;
+}
+
+#imagem {
+    display: block;
+    background-image: url(img/img-login.jpg);
+    background-size: cover;
+    height: 200px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+section {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    background-color: white;
+
+    width: 250px;
+    height: 516px;
+    border-radius: 20px;
+
+    /*Faz com que quando a tela se redimensionar, aja uma transição na altura e largura*/
+    transition: width 0.5s, height 0.5s;
+
+    /*Suaviza a transição*/
+    transition-timing-function: ease;
+}
+
+section h1 {
+    text-align: center;
+    margin: 8px 0px 8px 0px;
+}
+
+#formulario {
+    display: block;
+    padding: 10px;
+}
+
+input {
+    padding: 4px;
+    border-radius: 10px;
+    font-size: 1em;
+    background-color: #94CFCD;
+    border: none;
+    transform: translateY(-4px);
+    height: 85%;
+    width: calc(100% - 48px);
+}
+
+.campo {
+    margin: 5px 0px;
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+}
+
+i {
+    color: white;
+    font-size: 1.9em;
+    width: 40px;
+    padding: 5px;
+}
+
+#campo-email, #campo-senha {
+    background-color: #5F2C82;
+}
+
+#entrar {
+    color: white;
+    background-color: #53aaa7;
+    margin-top: 6px;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+}
+
+#entrar:hover {
+    background-color: #2D6462;
+    cursor: pointer;
+}
+
+#btn {
+    display: block;
+    height: 40px;
+    padding-top: 5px;
+    border: 1px solid #94CFCD;
+    text-align: center;
+    text-decoration: none;
+    color: #2D6462;
+    border-radius: 6px;
+}
+
+#btn:hover {
+    background-color: #94CFCD;
+    cursor: pointer;
+    color: white;
+}
+
+#esenha {
+    color: #2D6462;
+    font-size: 0.8em;
+}
+
+.bi-envelope-fill {
+    color: #2D6462;
+    font-size: 1.5rem;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    main {
+        background-image: linear-gradient(to bottom, #5f2c82, #49a09d);
+    }
+
+    section {
+        height: 350px;
+        width: 80vw;
+    }
+
+    section > #imagem {
+        float: left;
+        width: 30%;
+        height: 100%;
+        background-position: right center;
+        border-radius: 0px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+    section > #formulario {
+        float: right;
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    main {
+        background-image: linear-gradient(to bottom, #5f2c82, #49a09d);
+    }
+
+    section {
+        height: 350px;
+        width: 950px;
+    }
+
+    section > #imagem {
+        float: right;
+        width: 50%;
+        height: 100%;
+        background-position: right center;
+        border-radius: 0px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    section > #formulario {
+        float: left;
+        width: 50%;
+    }
+}
